@@ -25,7 +25,11 @@ def letter_count(text):
          else:
             letters[c] = 1
    
-   return letters
+   return dict_sort(letters)
+
+def dict_sort(dictionary):
+   sorted_list = sorted(dictionary.items(), reverse=True, key=lambda x:x[1])
+   return dict(sorted_list)
 
 def format_letter_count(letters):
    for key, val in letters.items():
