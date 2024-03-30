@@ -33,6 +33,6 @@ def dict_sort(dictionary):
 
 def format_letter_count(letters):
    for key, val in letters.items():
-      print(f"The {key} character was found {val} times")
+      print(f"The '{key}' character was found {val} times")
 
 main()
